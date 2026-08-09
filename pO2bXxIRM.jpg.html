@@ -1,0 +1,229 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Video Player</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ==================================================
+       PENGATURAN MUDAH
+       ================================================== */
+
+    :root {
+      /* Posisi banner atas */
+      --banner-atas-turun: 20px;
+
+      /* Posisi banner bawah */
+      --banner-bawah-turun: 40px;
+
+      /* Jarak video dari sisi layar */
+      --jarak-video: 10px;
+
+      /* Ukuran maksimal video di laptop/PC */
+      --max-video: 900px;
+    }
+
+
+    /* ==================================================
+       LAYOUT
+       ================================================== */
+
+    .page {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    /* ==================================================
+       BANNER
+       ================================================== */
+
+    .banner {
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Banner ATAS */
+    .banner-top {
+      order: 1;
+
+      /* Ubah angka di :root */
+      transform: translateY(var(--banner-atas-turun));
+    }
+
+    /* Banner BAWAH */
+    .banner-bottom {
+      order: 3;
+
+      /* Ubah angka di :root */
+      transform: translateY(var(--banner-bawah-turun));
+    }
+
+
+    /* ==================================================
+       VIDEO RESPONSIVE
+       ================================================== */
+
+    .video-container {
+      order: 2;
+
+      width: 100%;
+      max-width: var(--max-video);
+
+      margin: 0 auto;
+      padding: var(--jarak-video);
+    }
+
+    video {
+      display: block;
+
+      width: 100%;
+      height: auto;
+
+      aspect-ratio: 16 / 9;
+
+      object-fit: contain;
+
+      background: #000;
+
+      border-radius: 6px;
+    }
+
+
+    /* ==================================================
+       HP
+       ================================================== */
+
+    @media (max-width: 600px) {
+
+      .video-container {
+        padding: 5px;
+      }
+
+      video {
+        border-radius: 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+
+    <!-- ==================================================
+         BANNER ATAS
+         ================================================== -->
+
+    <div class="banner banner-top">
+
+      <script>
+        atOptions = {
+          key: '588e4334052d78dad210ddc8e0c88760',
+          format: 'js',
+          params: {}
+        };
+
+        document.write(
+          '<scr' +
+          'ipt type="text/javascript" src="' +
+          'https://degreetemptbummer.com/588e4334052d78dad210ddc8e0c88760/invoke.js">' +
+          '</scr' +
+          'ipt>'
+        );
+      </script>
+
+    </div>
+
+
+    <!-- ==================================================
+         VIDEO
+         ================================================== -->
+
+    <div class="video-container">
+
+      <video
+        controls
+        autoplay
+        playsinline
+        controlslist="nofullscreen nodownload noremoteplayback"
+        disablepictureinpicture
+        preload="metadata"
+      >
+
+        <source
+          src="https://cdn.videy.co/WJBHYu8p1.mp4"
+          type="video/mp4"
+        >
+
+        Browser Anda tidak mendukung pemutar video.
+
+      </video>
+
+    </div>
+
+
+    <!-- ==================================================
+         BANNER BAWAH
+         ================================================== -->
+
+    <div class="banner banner-bottom">
+
+      <script>
+        atOptions = {
+          key: '588e4334052d78dad210ddc8e0c88760',
+          format: 'js',
+          params: {}
+        };
+
+        document.write(
+          '<scr' +
+          'ipt type="text/javascript" src="' +
+          'https://degreetemptbummer.com/588e4334052d78dad210ddc8e0c88760/invoke.js">' +
+          '</scr' +
+          'ipt>'
+        );
+      </script>
+
+    </div>
+
+
+  </main>
+  
+<!-- HISTATS -->
+<script>
+var _Hasync = _Hasync || [];
+_Hasync.push(['Histats.start', '1,5004471,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+
+(function() {
+  var hs = document.createElement('script');
+  hs.type = 'text/javascript';
+  hs.async = true;
+  hs.src = 'https://s10.histats.com/js15_as.js';
+  document.body.appendChild(hs);
+})();
+</script>
+</body>
+</html>
+```
